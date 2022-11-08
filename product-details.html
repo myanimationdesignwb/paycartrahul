@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title> All products - Ranchi_Shop_online</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+
+  <div class="container">
+
+	<div class="navbar">
+		<div class="logo">
+			<!-- <img src="images/logo.png" width="125px"> -->
+			<h1 style="color: skyblue;">PayCart</h1>
+	    
+
+		</div>
+
+		<nav>
+			<ul id="MenuItems">
+				<p id="demo"></p>
+				<li><a href="index.html">Home</a></li>
+				<!-- <li><a href="about.html">About</a></li> -->
+				<!-- <li><a href="products.html">Product</a></li> -->
+				<li><a href="">Contact</a></li>
+				<li><a href="Account.html">logout</a></li>
+
+
+			</ul>
+		</nav>
+		<a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+		<img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+		
+	</div>
+</div>
+<!-------------------------------- single product details------------------->
+<div class="small-container single-product">
+	<div class="row">
+		<div class="col-2">
+			<a href="products.html"><img src="images/st-1.webp" width="100%" id="productImg"></a>
+
+
+			<!-- <div class="small-img-row">
+				<div class="small-img-col">
+					<img src="images/gallery-1.jpg" width="100%" class="small-img">
+				</div>
+				<div class="small-img-col">
+					<img src="images/gallery-2.jpg" width="100%" class="small-img">
+				</div>
+				<div class="small-img-col">
+					<img src="images/gallery-3.jpg" width="100%" class="small-img">
+				</div>
+				<div class="small-img-col">
+					<img src="images/gallery-4.jpg" width="100%" class="small-img">
+				</div>
+			</div> -->
+		</div>
+		<div class="col-2">
+			<p>Home / Novel</p>
+			<h1 style="color: white;">Because life is the gift</h1>
+			<!-- <h4>$50.00</h4> -->
+			
+				<!-- <option>select size</option> -->
+				<!-- <option>XXL</option>
+				<option>XL</option>
+				<option>Large</option>
+				<option>Medium</option>
+				<option>Small</option> -->
+				
+			
+			<input type="number" value="1">
+			<a href="cart.html" class="btn" ">Add To Cart</a>
+
+			<h3 style="color: skyblue;">Product Details <i class="fa fa-indent" ></i></h3>
+			<br>
+			<p>This book is a tribute to their courage, passion and zest for life. They will challenge your notion of the impossible</p>
+			
+		</div>
+		
+	</div>
+	
+</div>
+
+
+
+<!-----------------------title---------------->
+<div class="small-container">
+	<div class="row row-2">
+		<h2>Related products</h2>
+		<p>View More</p>
+	</div>
+	
+</div>
+
+
+
+<!----------------products-------------->
+                           
+<div class="small-container">
+   
+ <div class="row">
+
+	
+		<div class="col-4">
+			<img src="images/st-3.webp">
+			<h4>The girl who drank moon</h4>
+			<div class="rating">
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star-half-o" ></i>
+
+
+
+			</div>
+			<!-- <p>$130.00</p> -->
+		</div>
+
+<div class="col-4">
+			<img src="images/st-5.webp">
+			<h4>Buddha tale</h4>
+			<div class="rating">
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star-half-o" ></i>
+
+
+
+			</div>
+			<!-- <p>$130.00</p> -->
+		</div>
+
+<div class="col-4">
+			<img src="images/st-9.webp">
+			<h4>The Sang with two Horns</h4>
+			<div class="rating">
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star-half-o" ></i>
+
+
+
+			</div>
+			<!-- <p>$130.00</p> -->
+		</div>
+
+<div class="col-4">
+			<img src="images/st-8.webp">
+			<h4>Hero of ohmpus</h4>
+			<div class="rating">
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star" ></i>
+				<i class="fa fa-star-half-o" ></i>
+
+
+
+			</div>
+			<!-- <p>$130.00</p> -->
+		</div>
+	</div>		
+           
+
+	</div>
+	
+
+
+
+
+
+
+<!-----------------------JAVASCRIPT------------------>
+<script >
+	var time = document.getElementById('demo').innerHTML = Date();
+	var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+    	if(MenuItems.style.maxHeight == "0px")
+    	{
+    		MenuItems.style.maxHeight = "200px";
+    	}
+    	else
+    	{
+    		MenuItems.style.maxHeight = "0px";
+    	}
+    }
+
+
+</script>
+
+
+<!-------------------------javascript For product details------------->
+<script >
+	
+           var productImg = document.getElementById("productImg");
+           var smallImg = document.getElementsByClassName("small-img");
+
+           smallImg[0].onclick = function(){
+           	      productImg.src = smallImg[0].src;
+           }
+
+           smallImg[1].onclick = function(){
+           	      productImg.src = smallImg[1].src;
+           }
+
+           smallImg[2].onclick = function(){
+           	      productImg.src = smallImg[2].src;
+           }
+
+           smallImg[3].onclick = function(){
+           	      productImg.src = smallImg[3].src;
+           }
+
+</script>
+	
+
+</body>
+</html>
